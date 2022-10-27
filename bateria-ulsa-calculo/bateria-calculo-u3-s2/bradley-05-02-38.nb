@@ -1,0 +1,1388 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     68909,       1380]
+NotebookOptionsPosition[     68371,       1362]
+NotebookOutlinePosition[     68818,       1379]
+CellTagsIndexPosition[     68775,       1376]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["y'=sqrt(4x+5), y(1)=3", "WolframAlphaLong",
+ CellChangeTimes->{{3.8601406729293513`*^9, 3.8601407002816114`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"447e1800-551b-4137-b147-39fb9160e6f7"],
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = "y'=sqrt(4x+5), y(1)=3", Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+      "Sources"}, Asynchronous -> All, 
+    TimeConstraint -> {20, Automatic, Automatic, Automatic}, 
+    Method -> {
+     "Formats" -> {"cell", "minput", "msound", "dataformats"}, "Server" -> 
+      "https://api.wolframalpha.com/v1/"}}, Typeset`elements$$ = {
+   "Warnings", "Assumptions", "Brand", "Pods", "PodMenus", "Unsuccessful", 
+    "Sources"}, Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Input", "scanner" -> "Identity", "id" -> "Input", 
+     "position" -> "100", "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["minput", {}, {"{y'[x] == Sqrt[4 x + 5], y[1] == 3}"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{
+                    SuperscriptBox[
+                    "y", "\[Prime]", MultilineFunction -> None], "(", "x", 
+                    ")"}], "\[LongEqual]", 
+                   TagBox[
+                    SqrtBox[
+                    RowBox[{
+                    RowBox[{"4", " ", "x"}], "+", "5"}]], Identity]}], ",", 
+                 RowBox[{
+                   RowBox[{"y", "(", "1", ")"}], "\[LongEqual]", "3"}]}], 
+               "}"}], PolynomialForm[#, TraditionalOrder -> False]& ], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "ODE names", "scanner" -> "ODE", "id" -> "ODENames", 
+     "position" -> "200", "error" -> "false", "numsubpods" -> "2"}, {
+     XMLElement["subpod", {"title" -> "Separable equation"}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             TagBox[
+              RowBox[{
+                RowBox[{
+                  SuperscriptBox["y", "\[Prime]", MultilineFunction -> None], 
+                  "(", "x", ")"}], "\[LongEqual]", 
+                TagBox[
+                 SqrtBox[
+                  RowBox[{"5", "+", 
+                    RowBox[{"4", " ", "x"}]}]], Identity]}], HoldForm], 
+             PolynomialForm[#, TraditionalOrder -> False]& ], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["subpod", {"title" -> "Exact equation"}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             TagBox[
+              RowBox[{
+                RowBox[{
+                  RowBox[{
+                    RowBox[{"-", 
+                    SqrtBox[
+                    RowBox[{"5", "+", 
+                    RowBox[{"4", " ", "x"}]}]]}], " ", 
+                    RowBox[{"\[DifferentialD]", "x"}]}], "+", 
+                  RowBox[{"\[DifferentialD]", "y"}]}], "\[LongEqual]", "0"}], 
+              HoldForm], PolynomialForm[#, TraditionalOrder -> False]& ], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "2"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["infos", {"count" -> "1"}, {
+       XMLElement["info", {}, {
+         XMLElement[
+         "link", {
+          "url" -> 
+           "http://mathworld.wolfram.com/ExactFirst-\
+OrderOrdinaryDifferentialEquation.html", "text" -> 
+           "Exact equation"}, {}]}]}]}], Typeset`pod3$$ = XMLElement[
+   "pod", {"title" -> "ODE classification", "scanner" -> "ODE", "id" -> 
+     "ODEClassification", "position" -> "300", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+           "\"first\[Hyphen]order linear ordinary differential equation\"", 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"plaintext,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`pod4$$ = XMLElement[
+   "pod", {"title" -> "Differential equation solution", "scanner" -> "ODE", 
+     "id" -> "Solution", "position" -> "400", "error" -> "false", 
+     "numsubpods" -> "1", "primary" -> "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "DSolve[{y'[x] == Sqrt[5 + 4 x], y[1] == 3}, y[x], x]"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            RowBox[{
+              RowBox[{"y", "(", "x", ")"}], "\[LongEqual]", 
+              TagBox[
+               RowBox[{
+                 FractionBox["1", "6"], " ", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"4", " ", "x"}], "+", "5"}], ")"}], 
+                    RowBox[{"3", "/", "2"}]], "-", "9"}], ")"}]}], 
+               Identity]}], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Step-by-step solution", "input" -> 
+         "Solution__Step-by-step solution", "stepbystep" -> "true"}, {}]}]}], 
+   Typeset`pod5$$ = XMLElement[
+   "pod", {"title" -> "Plots of the solution", "scanner" -> "ODE", "id" -> 
+     "PlotsOfTheSolution", "position" -> "500", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                TagBox[
+                 GridBox[{{
+                    GraphicsBox[{{{{}, {}, 
+                    TagBox[{
+                    Directive[
+                    Opacity[1.], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                    AbsoluteThickness[1]], 
+                    LineBox[CompressedData["
+1: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
+                    "]]}, 
+                    Annotation[#, 
+                    "Charting`Private`Tag$4547799#1"]& ]}}, {}}, {
+                    GridLines -> Dynamic[
+                    Map[{{#, 
+                    GrayLevel[0.7]}}& , 
+                    MousePosition[{"Graphics", Graphics}, None]]], 
+                    Method -> {"GridLinesInFront" -> True}, Axes -> True, 
+                    Ticks -> False, AxesStyle -> GrayLevel[0.5], AxesLabel -> 
+                    None, Frame -> True, FrameTicks -> False, PlotLabel -> 
+                    None, RotateLabel -> False, ImageSize -> {140, Automatic},
+                     FrameLabel -> {
+                    FormBox["x", TraditionalForm], 
+                    FormBox["y", TraditionalForm], None, None}, 
+                    DisplayFunction -> Identity, PlotRangePadding -> {{
+                    Scaled[0.05], 
+                    Scaled[0.05]}, {
+                    Scaled[0.05], 
+                    Scaled[0.05]}}, PlotRangeClipping -> True, ImagePadding -> 
+                    All, DisplayFunction -> Identity, AspectRatio -> 
+                    NCache[GoldenRatio^(-1), 0.6180339887498948], 
+                    Axes -> {True, True}, AxesLabel -> {
+                    FormBox["x", TraditionalForm], 
+                    FormBox["y", TraditionalForm]}, AxesOrigin -> 
+                    NCache[{Rational[1, 4] Pi, 3.}, {0.7853981633974483, 3.}],
+                     AxesStyle -> Directive[
+                    AbsoluteThickness[0.2]], BaseStyle -> Automatic, 
+                    DisplayFunction :> Identity, 
+                    FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                    Directive[
+                    AbsoluteThickness[0.2]], 
+                    FrameTicks -> {{Automatic, Automatic}, {
+                    Automatic, Automatic}}, GridLinesStyle -> Automatic, 
+                    Method -> {
+                    "DefaultGraphicsInteraction" -> {
+                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+                    "Effects" -> {
+                    "Highlight" -> {"ratio" -> 2}, 
+                    "HighlightPoint" -> {"ratio" -> 2}, 
+                    "Droplines" -> {
+                    "freeformCursorMode" -> True, 
+                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+                    "ScalingFunctions" -> None}, PlotLabel -> FormBox[
+                    RowBox[{"{", "}"}], TraditionalForm], 
+                    PlotRange -> {All, All}, PlotRangeClipping -> True, 
+                    PlotRangePadding -> {Automatic, Automatic}, 
+                    Ticks -> {Automatic, Automatic}}], "\" \"", 
+                    GraphicsBox[{{{{}, {}, 
+                    TagBox[{
+                    Directive[
+                    Opacity[1.], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                    AbsoluteThickness[1]], 
+                    LineBox[CompressedData["
+1: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
+                    "]]}, 
+                    Annotation[#, 
+                    "Charting`Private`Tag$4547825#1"]& ]}}, {}}, {
+                    GridLines -> Dynamic[
+                    Map[{{#, 
+                    GrayLevel[0.7]}}& , 
+                    MousePosition[{"Graphics", Graphics}, None]]], 
+                    Method -> {"GridLinesInFront" -> True}, Axes -> True, 
+                    Ticks -> False, AxesStyle -> GrayLevel[0.5], AxesLabel -> 
+                    None, Frame -> True, FrameTicks -> False, PlotLabel -> 
+                    None, RotateLabel -> False, ImageSize -> {140, Automatic},
+                     FrameLabel -> {
+                    FormBox["y", TraditionalForm], 
+                    FormBox[
+                    SuperscriptBox[
+                    "y", "\[Prime]", MultilineFunction -> None], 
+                    TraditionalForm], None, None}, DisplayFunction -> 
+                    Identity, PlotRangePadding -> {{
+                    Scaled[0.05], 
+                    Scaled[0.05]}, {
+                    Scaled[0.05], 
+                    Scaled[0.05]}}, PlotRangeClipping -> True, ImagePadding -> 
+                    All, DisplayFunction -> Identity, AspectRatio -> 
+                    NCache[GoldenRatio^(-1), 0.6180339887498948], 
+                    Axes -> {True, True}, AxesLabel -> {
+                    FormBox["y", TraditionalForm], 
+                    FormBox[
+                    SuperscriptBox[
+                    "y", "\[Prime]", MultilineFunction -> None], 
+                    TraditionalForm]}, AxesOrigin -> 
+                    NCache[{Rational[1, 4] Pi, 2.9999999999999996`}, {
+                    0.7853981633974483, 2.9999999999999996`}], AxesStyle -> 
+                    Directive[
+                    AbsoluteThickness[0.2]], BaseStyle -> Automatic, 
+                    DisplayFunction :> Identity, 
+                    FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                    Directive[
+                    AbsoluteThickness[0.2]], 
+                    FrameTicks -> {{Automatic, Automatic}, {
+                    Automatic, Automatic}}, GridLinesStyle -> Automatic, 
+                    Method -> {
+                    "DefaultGraphicsInteraction" -> {
+                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+                    "Effects" -> {
+                    "Highlight" -> {"ratio" -> 2}, 
+                    "HighlightPoint" -> {"ratio" -> 2}, 
+                    "Droplines" -> {
+                    "freeformCursorMode" -> True, 
+                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+                    "ScalingFunctions" -> None}, PlotLabel -> FormBox[
+                    RowBox[{"{", "}"}], TraditionalForm], 
+                    PlotRange -> {All, All}, PlotRangeClipping -> True, 
+                    PlotRangePadding -> {Automatic, Automatic}, 
+                    Ticks -> {Automatic, Automatic}}], "\" \"", 
+                    StyleBox[
+                    InterpretationBox[
+                    TagBox[
+                    
+                    GridBox[{{""}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Right}}}, 
+                    DefaultBaseStyle -> "Column", 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    "Column"], 
+                    Column[{}, Alignment -> Right]], 
+                    GrayLevel[0.5], StripOnInput -> False]}}, 
+                  GridBoxAlignment -> {
+                   "Columns" -> {{Right}}, "Rows" -> {{Baseline}}}, 
+                  AutoDelete -> False, 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                 "Grid"]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+              DefaultBaseStyle -> "Column", 
+              GridBoxDividers -> {
+               "Columns" -> {{None}}, "Rows" -> {None, None}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{2}}}], "Column"], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"plaintext,computabledata,formatteddata"}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n  ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n "}]}], 
+   Typeset`pod6$$ = XMLElement[
+   "pod", {"title" -> "Interactive differential equation solution plots", 
+     "scanner" -> "ODE", "id" -> 
+     "InteractiveDifferentialEquationSolutionPlots", "position" -> "600", 
+     "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             FormBox[
+              StyleBox[
+               
+               DynamicModuleBox[{
+                CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$ = True, 
+                 CalculateScan`ODEScan`Private`iSQ$$ = True, 
+                 CalculateUtilities`GraphicsUtilities`Private`more$$ = False, 
+                 CalculateScan`ODEScan`Private`yTS$$ = {1}, 
+                 CalculateScan`ODEScan`Private`yyTS$$ = {1}, 
+                 CalculateScan`ODEScan`Private`\[CapitalDelta]x$$ = 
+                 0.2575795557527179, Typeset`show$$ = True, 
+                 Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu",
+                  Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+                 "\"untitled\"", Typeset`specs$$ = {{
+                    Hold[
+                    CalculateUtilities`GraphicsUtilities`Private`more$$], {
+                    False, True}}, {{
+                    Hold[
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$], 
+                    True, "show"}, {
+                    True -> "solution or derivatives", False -> 
+                    "generalized phase plots"}}, {{
+                    Hold[CalculateScan`ODEScan`Private`yTS$$], {1}, ""}, 
+                    Dynamic[
+                    Map[# -> Dynamic[
+                    Style[
+                    Derivative[# - 1][$CellContext`y], 
+                    If[
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$, 
+                    Black, Gray]]]& , 
+                    Range[1, 1 + 1]]]}, {{
+                    Hold[CalculateScan`ODEScan`Private`yyTS$$], {1}, ""}, 
+                    Dynamic[
+                    MapIndexed[Part[#2, 1] -> Dynamic[
+                    Style[
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`rowTemplate$\
+3388215[
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`localize$\
+3388215["`1` vs. `2`", 14246], {
+                    Derivative[
+                    Part[#, 1]][$CellContext`y], 
+                    Derivative[
+                    Part[#, 2]][$CellContext`y]}], 
+                    If[
+                    Not[CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$],
+                     Black, Gray]]]& , {{0, 1}}]]}, {{
+                    Hold[CalculateScan`ODEScan`Private`\[CapitalDelta]x$$], 
+                    0.2575795557527179, 
+                    Subscript["x", "max"]}, -1, 1}, {{
+                    Hold[CalculateScan`ODEScan`Private`iSQ$$], True, ""}, {
+                    True, False}}, {
+                    Hold[
+                    Style[
+                    Overlay[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "WABitmaps", "PodInfoBackground"]]], 
+                    Pane[
+                    Column[{
+                    Row[{
+                    Invisible[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource["WABitmaps", "OrangePlus"]]]], 
+                    " ", 
+                    Column[{
+                    Style["Initial conditions:"]}]}], 
+                    PaneSelector[{True -> Grid[{{
+                    Button[
+                    Row[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource["WABitmaps", "OrangePlus"]]], 
+                    " "}], CalculateUtilities`GraphicsUtilities`Private`more$$\
+ = False, Appearance -> None, BaseStyle -> {}], 
+                    Button[
+                    "Fewer controls", 
+                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    False, Appearance -> None, BaseStyle -> {}]}, {"", 
+                    Item[
+                    Column[{
+                    Manipulate`Place[1], 
+                    Dynamic[
+                    If[
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$ === 
+                    True, 
+                    Manipulate`Place[2], 
+                    Manipulate`Place[3]]], 
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`rowTemplate$\
+3388215["`1`\[Hyphen]range", {
+                    Style["x", Italic]}], 
+                    Manipulate`Place[4], 
+                    Row[{
+                    Manipulate`Place[5], " vertical image stabilization"}]}, 
+                    Dividers -> {None, {
+                    False, False, True, True, False, False}}], ItemSize -> 
+                    Scaled[1], Frame -> {None, None, True, None}]}}, 
+                    FrameStyle -> GrayLevel[0.9], Alignment -> Left, 
+                    Spacings -> {0, 0.8}], False -> Button[
+                    Row[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource["WABitmaps", "OrangePlus"]]], 
+                    " ", "More controls"}], 
+                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    True, Appearance -> None, BaseStyle -> {}]}, 
+                    Dynamic[
+                    CalculateUtilities`GraphicsUtilities`Private`more$$], 
+                    ImageSize -> Automatic]}], 
+                    ImageMargins -> {{20, 30}, {10, 10}}]}, {1, 2}, 2, 
+                    Alignment -> {Left, Top}]]], 
+                    Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = 
+                 Automatic, Typeset`update$$ = 0, Typeset`initDone$$ = False, 
+                 Typeset`skipInitDone$$ = False, 
+                 CalculateUtilities`GraphicsUtilities`Private`more$3389779$$ = 
+                 False, CalculateScan`ODEScan`Private`functionOrPhasePlotQ$\
+3389784$$ = False, CalculateScan`ODEScan`Private`\[CapitalDelta]x$3389785$$ = 
+                 0, CalculateScan`ODEScan`Private`iSQ$3389786$$ = False}, 
+                DynamicBox[
+                 Manipulate`ManipulateBoxes[
+                 2, TraditionalForm, 
+                  "Variables" :> {
+                   CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$ = 
+                    True, CalculateScan`ODEScan`Private`iSQ$$ = True, 
+                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    False, CalculateScan`ODEScan`Private`yTS$$ = {1}, 
+                    CalculateScan`ODEScan`Private`yyTS$$ = {1}, 
+                    CalculateScan`ODEScan`Private`\[CapitalDelta]x$$ = 
+                    0.2575795557527179}, "ControllerVariables" :> {
+                    Hold[
+                    CalculateUtilities`GraphicsUtilities`Private`more$$, 
+                    CalculateUtilities`GraphicsUtilities`Private`more$3389779$\
+$, False], 
+                    Hold[
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$, 
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$\
+3389784$$, False], 
+                    Hold[
+                    CalculateScan`ODEScan`Private`\[CapitalDelta]x$$, 
+                    CalculateScan`ODEScan`Private`\[CapitalDelta]x$3389785$$, 
+                    0], 
+                    Hold[
+                    CalculateScan`ODEScan`Private`iSQ$$, 
+                    CalculateScan`ODEScan`Private`iSQ$3389786$$, False]}, 
+                  "OtherVariables" :> {
+                   Typeset`show$$, Typeset`bookmarkList$$, 
+                    Typeset`bookmarkMode$$, Typeset`animator$$, 
+                    Typeset`animvar$$, Typeset`name$$, Typeset`specs$$, 
+                    Typeset`size$$, Typeset`update$$, Typeset`initDone$$, 
+                    Typeset`skipInitDone$$}, "Body" :> 
+                  Module[{
+                    CalculateScan`ODEScan`Private`eqs$, 
+                    CalculateScan`ODEScan`Private`sol$, 
+                    CalculateScan`ODEScan`Private`addInits$, 
+                    CalculateScan`ODEScan`Private`nds$, 
+                    CalculateScan`ODEScan`Private`xRanges$, 
+                    CalculateScan`ODEScan`Private`xRange$, 
+                    CalculateScan`ODEScan`Private`IsPurelyRealQ$, 
+                    CalculateScan`ODEScan`Private`yPlotRe$, 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotRe$, 
+                    CalculateScan`ODEScan`Private`yPlotReIm$, 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotReIm$,
+                     CalculateScan`ODEScan`Private`\
+oldVerticalPlotRangeyPlotReIm$, CalculateScan`ODEScan`Private`yyPPlotRe$}, 
+                    CalculateScan`ODEScan`Private`eqs$ = 
+                    Flatten[{{
+                    Derivative[
+                    1][$CellContext`y][$CellContext`x] == (5 + 
+                    4 $CellContext`x)^Rational[1, 2]}, {$CellContext`y[1] == 
+                    3}, CalculateScan`ODEScan`Private`addInits$ = 
+                    Thread[CalculateScan`ODEScan`Private`missingInits$3388213 == 
+                    Tan[{}]]}]; CalculateScan`ODEScan`Private`sol$ = Quiet[
+                    Check[CalculateScan`ODEScan`Private`nds$ = Quiet[
+                    NDSolve[
+                    CalculateScan`ODEScan`Private`eqs$, $CellContext`y, \
+{$CellContext`x, 1, 1 + Sign[CalculateScan`ODEScan`Private`\[CapitalDelta]x$$]
+                     Tan[0.999 Pi 2^(-1) 
+                    Abs[CalculateScan`ODEScan`Private`\[CapitalDelta]x$$]^(1/
+                    8)]}, PrecisionGoal -> ControlActive[4, Automatic], 
+                    AccuracyGoal -> ControlActive[4, Automatic], MaxSteps -> 
+                    ControlActive[10^4, 5 10^4]], {
+                    MessageName[NDSolve, "mxst"], 
+                    MessageName[NDSolve, "ndsz"]}], 
+                    CalculateScan`ODEScan`Private`failedNDSolve = 
+                    Hold[NDSolve][
+                    CalculateScan`ODEScan`Private`eqs$, $CellContext`y, \
+{$CellContext`x, 1, 1 + Sign[CalculateScan`ODEScan`Private`\[CapitalDelta]x$$]
+                     Tan[0.999 Pi 2^(-1) 
+                    Abs[CalculateScan`ODEScan`Private`\[CapitalDelta]x$$]^(1/
+                    8)]}]; "$Failed"]]; If[
+                    Or[
+                    MatchQ[CalculateScan`ODEScan`Private`sol$, 
+                    Blank[NDSolve]], CalculateScan`ODEScan`Private`sol$ === 
+                    "$Failed", Chop[
+                    Apply[Subtract, 
+                    Part[CalculateScan`ODEScan`Private`nds$, 1, 1, 2, 1, 1]]] == 
+                    0], 
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`localize$\
+3388215["could not numerically solve the differential equation for the \
+specified parameters", 14242], 
+                    CalculateScan`ODEScan`Private`xRanges$ = 
+                    Map[Part[#, 1, 2, 1, 1]& , 
+                    CalculateScan`ODEScan`Private`nds$]; 
+                    CalculateScan`ODEScan`Private`xRange$ = {
+                    1, 1 + Sign[
+                    CalculateScan`ODEScan`Private`\[CapitalDelta]x$$] Min[
+                    Abs[
+                    Apply[
+                    Subtract, CalculateScan`ODEScan`Private`xRanges$, {1}]]]}; 
+                    CalculateScan`ODEScan`Private`IsPurelyRealQ$ = Not[
+                    MemberQ[
+                    Cases[CalculateScan`ODEScan`Private`nds$, 
+                    Blank[List], {0, Infinity}], 
+                    Blank[Complex], {0, Infinity}]]; 
+                    If[CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$, 
+                    If[CalculateScan`ODEScan`Private`yTS$$ === {}, 
+                    CalculateScan`ODEScan`Private`yTS$$ = {1}]; 
+                    If[CalculateScan`ODEScan`Private`IsPurelyRealQ$, 
+                    CalculateScan`ODEScan`Private`yPlotRe$ = Plot[
+                    Evaluate[
+                    ReplaceAll[
+                    Map[Derivative[# - 1][$CellContext`y][$CellContext`x]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], 
+                    CalculateScan`ODEScan`Private`nds$]], 
+                    Evaluate[
+                    
+                    Flatten[{$CellContext`x, 
+                    CalculateScan`ODEScan`Private`xRange$}]], PlotLabel -> 
+                    Column[CalculateScan`ODEScan`Private`addInits$], 
+                    PlotStyle -> Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], AxesLabel -> {
+                    RawBoxes[
+                    FormBox["x", TraditionalForm]], 
+                    If[
+                    Union[CalculateScan`ODEScan`Private`yTS$$] === {
+                    1}, $CellContext`y, 
+                    Superscript[$CellContext`y, "(n)"]]}, PlotRange -> 
+                    Automatic, ImagePadding -> {{10, 30}, {10, 20}}, 
+                    ImageSize -> {300, Automatic}]; 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotRe$ = 
+                    Part[
+                    Lookup[
+                    AbsoluteOptions[
+                    CalculateScan`ODEScan`Private`yPlotRe$, PlotRange], 
+                    PlotRange], 2]; If[
+                    And[
+                    IntervalMemberQ[
+                    Interval[
+                    CalculateScan`ODEScan`Private`oldVerticalPlotRangeyPlotRe]\
+, 
+                    Interval[
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotRe$]],
+                     Abs[
+                    Apply[
+                    Subtract, 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotRe$]]/
+                    Abs[
+                    Apply[
+                    Subtract, 
+                    CalculateScan`ODEScan`Private`oldVerticalPlotRangeyPlotRe]\
+] > 1/3], Null, CalculateScan`ODEScan`Private`oldVerticalPlotRangeyPlotRe = 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotRe$ + \
+{(-1)/3, 1/3} Abs[
+                    Apply[
+                    Subtract, 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotRe$]]]\
+; Labeled[
+                    If[CalculateScan`ODEScan`Private`iSQ$$, 
+                    Show[
+                    CalculateScan`ODEScan`Private`yPlotRe$, 
+                    PlotRange -> {
+                    Automatic, 
+                    CalculateScan`ODEScan`Private`oldVerticalPlotRangeyPlotRe}\
+], CalculateScan`ODEScan`Private`yPlotRe$], 
+                    Function[{
+                    CalculateScan`ODEScan`Private`labels, 
+                    CalculateScan`ODEScan`Private`styles}, 
+                    Style[
+                    Grid[
+                    Table[{
+                    Graphics[{
+                    Part[
+                    CalculateScan`ODEScan`Private`styles, 
+                    CalculateScan`ODEScan`Private`j], 
+                    Line[{{0, 0}, {1, 0}}]}, ImageSize -> {25, 15}, 
+                    PlotRange -> {{0, 1}, {(-1)/2, 1/2}}, AspectRatio -> 1/2], 
+                    Part[
+                    CalculateScan`ODEScan`Private`labels, 
+                    CalculateScan`ODEScan`Private`j]}, {
+                    CalculateScan`ODEScan`Private`j, 
+                    Length[CalculateScan`ODEScan`Private`labels]}], Frame -> 
+                    False, Spacings -> {1, 1}], 
+                    ImageSizeMultipliers -> {1, 1}]][
+                    MapIndexed[Derivative[# - 1][$CellContext`y][
+                    RawBoxes[
+                    FormBox["x", TraditionalForm]]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], 
+                    MapIndexed[Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Part[#2, 1]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]]], Right], 
+                    CalculateScan`ODEScan`Private`yPlotReIm$ = Plot[
+                    Evaluate[
+                    ReplaceAll[
+                    Join[
+                    Map[Re[
+                    Derivative[# - 1][$CellContext`y][$CellContext`x]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], 
+                    Map[Im[
+                    Derivative[# - 1][$CellContext`y][$CellContext`x]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]]], 
+                    CalculateScan`ODEScan`Private`nds$]], 
+                    Evaluate[
+                    
+                    Flatten[{$CellContext`x, 
+                    CalculateScan`ODEScan`Private`xRange$}]], PlotLabel -> 
+                    Column[CalculateScan`ODEScan`Private`addInits$], 
+                    PlotRange -> Automatic, PlotStyle -> Join[
+                    Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], 
+                    (ReplaceAll[#, Pattern[CalculateScan`ODEScan`Private`col, 
+                    Blank[RGBColor]] :> 
+                    Apply[RGBColor, 1 - Apply[
+                    List, CalculateScan`ODEScan`Private`col]]]& )[
+                    Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]]]], AxesLabel -> {
+                    RawBoxes[
+                    FormBox["x", TraditionalForm]], 
+                    If[
+                    Union[CalculateScan`ODEScan`Private`yTS$$] === {
+                    1}, $CellContext`y, 
+                    Superscript[$CellContext`y, "(n)"]]}, PlotRange -> 
+                    Automatic, ImagePadding -> {{10, 30}, {10, 20}}, 
+                    ImageSize -> {300, Automatic}]; 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotReIm$ = 
+                    Part[
+                    Lookup[
+                    AbsoluteOptions[
+                    CalculateScan`ODEScan`Private`yPlotReIm$, PlotRange], 
+                    PlotRange], 2]; If[
+                    And[
+                    IntervalMemberQ[
+                    Interval[
+                    CalculateScan`ODEScan`Private`\
+oldVerticalPlotRangeyPlotReIm$], 
+                    Interval[
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotReIm$]\
+], Abs[
+                    Apply[
+                    Subtract, 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotReIm$]\
+]/Abs[
+                    Apply[
+                    Subtract, 
+                    CalculateScan`ODEScan`Private`\
+oldVerticalPlotRangeyPlotReIm$]] > 1/3], Null, 
+                    CalculateScan`ODEScan`Private`\
+oldVerticalPlotRangeyPlotReIm$ = 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotReIm$ + \
+{(-1)/3, 1/3} Abs[
+                    Apply[
+                    Subtract, 
+                    CalculateScan`ODEScan`Private`verticalPlotRangeyPlotReIm$]\
+]]; Labeled[
+                    If[CalculateScan`ODEScan`Private`iSQ$$, 
+                    Show[
+                    CalculateScan`ODEScan`Private`yPlotReIm$, 
+                    PlotRange -> {
+                    Automatic, 
+                    CalculateScan`ODEScan`Private`\
+oldVerticalPlotRangeyPlotReIm$}], CalculateScan`ODEScan`Private`yPlotReIm$], 
+                    
+                    Function[{
+                    CalculateScan`ODEScan`Private`labels, 
+                    CalculateScan`ODEScan`Private`styles}, 
+                    Style[
+                    Grid[
+                    Table[{
+                    Graphics[{
+                    Part[
+                    CalculateScan`ODEScan`Private`styles, 
+                    CalculateScan`ODEScan`Private`j], 
+                    Line[{{0, 0}, {1, 0}}]}, ImageSize -> {25, 15}, 
+                    PlotRange -> {{0, 1}, {(-1)/2, 1/2}}, AspectRatio -> 1/2], 
+                    Part[
+                    CalculateScan`ODEScan`Private`labels, 
+                    CalculateScan`ODEScan`Private`j]}, {
+                    CalculateScan`ODEScan`Private`j, 
+                    Length[CalculateScan`ODEScan`Private`labels]}], Frame -> 
+                    False, Spacings -> {1, 1}], 
+                    ImageSizeMultipliers -> {1, 1}]][
+                    Join[
+                    MapIndexed[Re[
+                    Derivative[# - 1][$CellContext`y][
+                    RawBoxes[
+                    FormBox["x", TraditionalForm]]]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], 
+                    MapIndexed[Im[
+                    Derivative[# - 1][$CellContext`y][
+                    RawBoxes[
+                    FormBox["x", TraditionalForm]]]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]]], 
+                    Join[
+                    MapIndexed[Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Part[#2, 1]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]], 
+                    
+                    MapIndexed[(
+                    ReplaceAll[#, Pattern[CalculateScan`ODEScan`Private`col, 
+                    Blank[RGBColor]] :> 
+                    Apply[RGBColor, 1 - Apply[
+                    List, CalculateScan`ODEScan`Private`col]]]& )[
+                    Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Part[#2, 1]]]& , 
+                    Union[CalculateScan`ODEScan`Private`yTS$$]]]], Right]], 
+                    If[CalculateScan`ODEScan`Private`yyTS$$ === {}, 
+                    CalculateScan`ODEScan`Private`yyTS$$ = {1}]; 
+                    CalculateScan`ODEScan`Private`yyPPlotRe$ = ParametricPlot[
+                    Evaluate[
+                    Map[ReplaceAll[#, CalculateScan`ODEScan`Private`nds$]& , 
+                    Re[
+                    Apply[{
+                    Derivative[#][$CellContext`y][$CellContext`x], 
+                    Derivative[#2][$CellContext`y][$CellContext`x]}& , 
+                    Part[{{0, 1}}, 
+                    Union[CalculateScan`ODEScan`Private`yyTS$$]], {1}]]]], 
+                    Evaluate[
+                    
+                    Flatten[{$CellContext`x, 
+                    CalculateScan`ODEScan`Private`xRange$}]], AxesLabel -> {
+                    Superscript[$CellContext`y, 
+                    Row[{"(", 
+                    Style["m", Italic], ")"}]], 
+                    Superscript[$CellContext`y, 
+                    Row[{"(", 
+                    Style["n", Italic], ")"}]]}, PlotLabel -> 
+                    Column[CalculateScan`ODEScan`Private`addInits$], 
+                    PlotStyle -> Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Union[CalculateScan`ODEScan`Private`yyTS$$]], AspectRatio -> 
+                    1/GoldenRatio, PlotRange -> Automatic, 
+                    ImagePadding -> {{10, 30}, {10, 20}}, 
+                    ImageSize -> {300, Automatic}]; 
+                    Labeled[CalculateScan`ODEScan`Private`yyPPlotRe$, 
+                    
+                    Function[{
+                    CalculateScan`ODEScan`Private`labels, 
+                    CalculateScan`ODEScan`Private`styles}, 
+                    Style[
+                    Grid[
+                    Table[{
+                    Graphics[{
+                    Part[
+                    CalculateScan`ODEScan`Private`styles, 
+                    CalculateScan`ODEScan`Private`j], 
+                    Line[{{0, 0}, {1, 0}}]}, ImageSize -> {25, 15}, 
+                    PlotRange -> {{0, 1}, {(-1)/2, 1/2}}, AspectRatio -> 1/2], 
+                    Part[
+                    CalculateScan`ODEScan`Private`labels, 
+                    CalculateScan`ODEScan`Private`j]}, {
+                    CalculateScan`ODEScan`Private`j, 
+                    Length[CalculateScan`ODEScan`Private`labels]}], Frame -> 
+                    False, Spacings -> {1, 1}], 
+                    ImageSizeMultipliers -> {1, 1}]][
+                    MapIndexed[
+                    Map[If[CalculateScan`ODEScan`Private`IsPurelyRealQ$, 
+                    Identity[
+                    Blank[Slot]], 
+                    Re[
+                    Blank[Slot]]]& , {
+                    Derivative[
+                    Part[#, 1]][$CellContext`y], 
+                    Derivative[
+                    Part[#, 2]][$CellContext`y]}]& , 
+                    Part[{{0, 1}}, 
+                    Union[CalculateScan`ODEScan`Private`yyTS$$]]], 
+                    MapIndexed[Part[{
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.24, 0.4428931686004542]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.6, 0.5470136627990908, 0.24]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.6, 0.33692049419863584`]], 
+                    Directive[
+                    AbsoluteThickness[1], 
+                    RGBColor[0.24, 0.5939180232054561, 0.6]]}, 
+                    Part[#2, 1]]& , 
+                    Part[{{0, 1}}, 
+                    Union[CalculateScan`ODEScan`Private`yyTS$$]]]], Right]]]],
+                   "Specifications" :> {{
+                    CalculateUtilities`GraphicsUtilities`Private`more$$, {
+                    False, True}, ControlType -> None}, {{
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$, 
+                    True, "show"}, {
+                    True -> "solution or derivatives", False -> 
+                    "generalized phase plots"}, ControlPlacement -> 1}, {{
+                    CalculateScan`ODEScan`Private`yTS$$, {1}, ""}, 
+                    Dynamic[
+                    Map[# -> Dynamic[
+                    Style[
+                    Derivative[# - 1][$CellContext`y], 
+                    If[
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$, 
+                    Black, Gray]]]& , 
+                    Range[1, 1 + 1]]], ControlType -> CheckboxBar, 
+                    ContinuousAction -> False, ControlPlacement -> 2}, {{
+                    CalculateScan`ODEScan`Private`yyTS$$, {1}, ""}, 
+                    Dynamic[
+                    MapIndexed[Part[#2, 1] -> Dynamic[
+                    Style[
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`rowTemplate$\
+3388215[
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`localize$\
+3388215["`1` vs. `2`", 14246], {
+                    Derivative[
+                    Part[#, 1]][$CellContext`y], 
+                    Derivative[
+                    Part[#, 2]][$CellContext`y]}], 
+                    If[
+                    Not[CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$],
+                     Black, Gray]]]& , {{0, 1}}]], ControlType -> CheckboxBar,
+                     ContinuousAction -> False, ControlPlacement -> 3}, {{
+                    CalculateScan`ODEScan`Private`\[CapitalDelta]x$$, 
+                    0.2575795557527179, 
+                    Subscript["x", "max"]}, -1, 1, ControlPlacement -> 4}, {{
+                    CalculateScan`ODEScan`Private`iSQ$$, True, ""}, {
+                    True, False}, ControlPlacement -> 5}, 
+                    Style[
+                    Overlay[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "WABitmaps", "PodInfoBackground"]]], 
+                    Pane[
+                    Column[{
+                    Row[{
+                    Invisible[
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource["WABitmaps", "OrangePlus"]]]], 
+                    " ", 
+                    Column[{
+                    Style["Initial conditions:"]}]}], 
+                    PaneSelector[{True -> Grid[{{
+                    Button[
+                    Row[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource["WABitmaps", "OrangePlus"]]], 
+                    " "}], CalculateUtilities`GraphicsUtilities`Private`more$$\
+ = False, Appearance -> None, BaseStyle -> {}], 
+                    Button[
+                    "Fewer controls", 
+                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    False, Appearance -> None, BaseStyle -> {}]}, {"", 
+                    Item[
+                    Column[{
+                    Manipulate`Place[1], 
+                    Dynamic[
+                    If[
+                    CalculateScan`ODEScan`Private`functionOrPhasePlotQ$$ === 
+                    True, 
+                    Manipulate`Place[2], 
+                    Manipulate`Place[3]]], 
+                    
+                    CalculateUtilities`GraphicsUtilities`Private`rowTemplate$\
+3388215["`1`\[Hyphen]range", {
+                    Style["x", Italic]}], 
+                    Manipulate`Place[4], 
+                    Row[{
+                    Manipulate`Place[5], " vertical image stabilization"}]}, 
+                    Dividers -> {None, {
+                    False, False, True, True, False, False}}], ItemSize -> 
+                    Scaled[1], Frame -> {None, None, True, None}]}}, 
+                    FrameStyle -> GrayLevel[0.9], Alignment -> Left, 
+                    Spacings -> {0, 0.8}], False -> Button[
+                    Row[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource["WABitmaps", "OrangePlus"]]], 
+                    " ", "More controls"}], 
+                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    True, Appearance -> None, BaseStyle -> {}]}, 
+                    Dynamic[
+                    CalculateUtilities`GraphicsUtilities`Private`more$$], 
+                    ImageSize -> Automatic]}], 
+                    ImageMargins -> {{20, 30}, {10, 10}}]}, {1, 2}, 2, 
+                    Alignment -> {Left, Top}]]}, 
+                  "Options" :> {
+                   ControlPlacement -> Bottom, 
+                    FrameMargins -> {{0, 0}, {0, 10}}, Paneled -> False, 
+                    AppearanceElements -> {}, 
+                    LabelStyle -> {
+                    "DialogStyle", FontColor -> GrayLevel[0.25]}}, 
+                  "DefaultOptions" :> {}], SingleEvaluation -> True], 
+                Initialization :> ({None, 
+                   ReleaseHold[
+                    Uncompress[
+                    "6:eJztVm1v0zAQbikw3t/+\
+ARKfkbaCtC9IsI6NSQNKUr73ljiJhWsH29kGfx58dpM0a1cppgM0pR9O9aV5fPfcc9d7fiKCpN/\
+r9dRNYz4IFidbeHpmzEjMclHw+P15LolSVPDkBj67Z0xI9D5h8IPEznfbmAMhZ6Dd+Q2+\
+DywqGGjyVVNGNSVqeighz2ikas9Y0lPzkykTETD6k7wYDnd3d7ZfOxiMZQxaE8nVsC1knklQJOkh0C\
+1j9hjwb+74tDx+KhgLyfeC8Iiox8Y7kRAbGMGBYT7et15vph5gYhp4DDK+\
+cpqsPEdtL1BaUp5OyCzHNy4na7stMMhUOW4eltysU5AL/w4+EKGNyXls0vZsCfQL45rRd1FW/\
+5y7AZ7ftoWX4mw1cZjfO4a8gaanRC3T+bJ1nRwjVdfa6OdcXdV82WiQl0+Z+n/\
+pmCq9HMZO2zDI7MTUeLX2luFftYUXOXb9XNyPjPnsHCXgquFQCe6jiAs2j6KZ8sBJtH26KjcOh3G/\
+4jtEp08FK5zAxFn2i+\
+2PJxV4vSmEWLvpBqTD6xkQkJwYV2y53acp1aMMJEQGeH5dv2yyiahD8bizfe0pj6kZYI6QdcsTmqNk\
+oe6go+zLHxW3ksuFJkPej7gmKZFrRX8X6yMNuTyeCM9IQrygqVdvDqukxiC9ZT8oQcIcOEVI+\
+st87Df3cLESSNWhRHVJx+LAlubcP4l+\
+WeBjwlOdNXdsz9Hl3baYTSDOatUFNEkWp83mmO43mW7c0BzoviT4lsR/oHebQrcp/\
+NVNYWkP7taEbk3o1oRuTejWhP93TbAR47/Sb1KVuI4="]]}; Typeset`initDone$$ = True), 
+                DynamicModuleValues :> {}, Deinitialization :> None, 
+                UntrackedVariables :> {Typeset`size$$}, 
+                SynchronousInitialization -> True, 
+                UnsavedVariables :> {Typeset`initDone$$}, 
+                UndoTrackedVariables :> {
+                 Typeset`show$$, Typeset`bookmarkMode$$}], "Manipulate", 
+               Deployed -> True, StripOnInput -> False], TraditionalForm], 
+             Manipulate`InterpretManipulate[1]], TraditionalForm]], 
+          "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement["dataformats", {}, {}]}], 
+     XMLElement["expressiontypes", {"count" -> "1"}, {"\n   ", 
+       XMLElement["expressiontype", {"name" -> "Default"}, {}], "\n  "}]}], 
+   Typeset`aux1$$ = {True, False, {False}, True}, Typeset`aux2$$ = {
+   True, False, {False, False}, True}, Typeset`aux3$$ = {
+   True, False, {False}, True}, Typeset`aux4$$ = {True, False, {False}, True},
+    Typeset`aux5$$ = {True, False, {False}, True}, Typeset`aux6$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = 
+   FrontEnd`SuppressEvaluationHash[True], Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> 
+    "false", {"http://www.w3.org/XML/1998/namespace", "space"} -> "preserve", 
+    "numpods" -> "6", "datatypes" -> "", "timedout" -> "", "timedoutpods" -> 
+    "", "timing" -> "0.969", "parsetiming" -> "0.313", "parsetimedout" -> 
+    "false", "recalculate" -> "", "id" -> 
+    "MSP34411he298ec31451184000052dfi75f5d3bf8b5", "host" -> 
+    "https://www6b3.wolframalpha.com", "server" -> "12", "related" -> 
+    "https://www6b3.wolframalpha.com/api/v1/relatedQueries.jsp?id=\
+MSPa34421he298ec314511840000257939i89fdcbca3822558548030476863", "version" -> 
+    "2.6", "inputstring" -> "y'=sqrt(4x+5), y(1)=3"}, 
+   Typeset`sessioninfo$$ = {
+   "TimeZone" -> -5., 
+    "Date" -> {2022, 4, 28, 8, 18, 24.299648`9.138174906237268}, "Line" -> 4, 
+    "SessionID" -> 29904166127299147123}, Typeset`showpods$$ = {1, 2, 3, 4, 5,
+    6}, Typeset`failedpods$$ = {}, Typeset`chosen$$ = {}, Typeset`open$$ = 
+   False, Typeset`newq$$ = "y'=sqrt(4x+5), y(1)=3"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+         Typeset`pod5$$, Typeset`pod6$$}, {
+        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$, 
+         Typeset`aux5$$, Typeset`aux6$$}, Typeset`chosen$$, Typeset`open$$, 
+        Typeset`elements$$, Typeset`q$$, Typeset`opts$$, Typeset`nonpods$$, 
+        Typeset`queryinfo$$, Typeset`sessioninfo$$, Typeset`showpods$$, 
+        Typeset`failedpods$$, Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{704., {399.3544921875, 404.6455078125}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     And[
+      Not[Typeset`initdone$$ === True], 
+      Not[Typeset`initdone$$ === FrontEnd`SuppressEvaluationHash[True]]], 
+     Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{
+        Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$, 
+         Typeset`pod5$$, Typeset`pod6$$}], Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = FrontEnd`SuppressEvaluationHash[True]],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Print", "WolframAlphaFullOutput",
+ CellChangeTimes->{
+  3.8601407044093556`*^9},ExpressionUUID->"fbf7e299-a5b8-4554-a732-\
+e80c6c6af405"]
+}, Open  ]]
+},
+WindowSize->{768., 507.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ff62ae08-a412-4ead-ba05-db75e214349d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 197, 2, 41, "WolframAlphaLong",ExpressionUUID->"447e1800-551b-4137-b147-39fb9160e6f7"],
+Cell[780, 26, 67575, 1333, 814, "Print",ExpressionUUID->"fbf7e299-a5b8-4554-a732-e80c6c6af405"]
+}, Open  ]]
+}
+]
+*)
+
